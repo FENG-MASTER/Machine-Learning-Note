@@ -1,0 +1,32 @@
+# 前言 #
+
+这系列博客是我入门机器学习的学习笔记,笔记内容来自**斯坦福大学的Andrew Ng在coursera上的关于机器学习的入门基础视频教程**
+
+视频课程地址:https://www.coursera.org/learn/machine-learning
+
+## 初步了解机器学习 ##
+
+虽然我是个搞计算机的本科生,但其实我一直很少接触算法相关的内容,特别是前沿的算法知识,这部分属于我的知识盲区,我之前甚至连机器学习是干啥的我都不知道,下面说下我在学习过程中对机器学习的了解
+
+**机器学习其实就是让计算机自动的去学习一些东西**,那怎么学习呢?我也不知道..(我要是知道了还入门个球)
+
+我们来看一下一些专业的人士都是怎么定义机器学习的
+
+ Arthur Samuel (1959) : Machine Learning: Field of study that gives computers the ability to learn without being explicitly programmed.(翻译过来就是,不用硬编码就可以给与计算机学习的能力)
+
+ Tom Mitchell (1998) Well-posed Learning Problem: A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.(U&%^&*%%巴拉巴拉,不翻译了,自己看)
+
+
+## 算法分类 ##
+
+### 监督学习  Supervised learning ###
+监督学习:利用给定的已知的数据样本,分析后,使其达到所要求性能的过程
+
+个人理解就是,给定的数据样本中,已经告诉了计算机是什么,然后计算机通过分析学习之后,对于你给的其他数据,都能告诉你是什么
+
+### 非监督学习 Unsupervised learning ###
+非监督学习:利用给定的未知的数据样本,试图找到隐藏的结构的过程
+
+个人理解就是,给定的数据样本中,不告诉计算机是什么,计算机试图分析找出这些样本中的隐藏的结构.
+
+
