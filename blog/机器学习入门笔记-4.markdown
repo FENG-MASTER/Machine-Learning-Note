@@ -1,0 +1,276 @@
+# 前言 #
+
+这次笔记是针对第二周最后的编程作业的笔记,独立完成了这次作业后,对机器学习有了初步的较为全面的认识.
+
+## 作业要求 ##
+
+>加粗表示必做
+
+1. **Warm up exercise** 热身练习
+2. **plotData** 绘图
+3. **Compute cost for one variable** 计算代价函数的值(单变量)
+4. **Gradient descent for one variable** 梯度下降法(单变量)
+5. Feature normalization 归一化
+6. Compute cost for multiple variables 计算代价函数的值(多变量)
+7. Gradient descent for multiple variables 梯度下降法(多变量)
+8. Normal Equations 正规方程
+
+
+## Warm up exercise ##
+
+这个练习只是为了让你了解作业我完成方式而已,总的来说,完成作业的方法:
+
+1. 修改当前阶段对应的函数文件(.m文件),如要完成 热身练习,就需要修改warmUpExercise.m
+2. 完成函数后,运行ex1程序,验证是否修改正确
+3. 每完成一步,使用submit指令提交你的答案
+
+## Plotting the Data ##
+
+这个步骤需要补充完成函数文件plotData.m
+
+在每次设计一个算法的时候,我们都应该先通过直观的方式去感受了解一下当前的测试集是什么样的数据,这样有利于我们设计和调试,所以这里有个绘图的过程
+
+答案随便,你绘出图形来就可以了
+
+下面是我的答案
+
+	plot(x,y,'rx');
+
+	ylabel('profit');
+	xlabel('population');
+
+
+## Compute cost for one variable ##
+
+这个步骤需要补充完成函数文件computeCost.m
+
+这个部分我们需要完成代价函数值的计算,具体来说就是,给定theta,X,y,求出这个状态下代价函数J的值
+
+1. theta:就是当前移动到的位置,好吧,我这样说有点太low了,你要是实在不知道这个是啥,请回头看教程
+2. X:测试集中特征变量的部分的向量(当前,包括了我们自己添加的x0,并且x0恒等于1,为啥要添加,请回头看教程,总的来说,方便矩阵计算)
+3. y:测试集中的结果值向量
+
+我们先来回顾下代价函数的公式
+
+![](https://i.imgur.com/WC9DpzJ.png)
+
+![](https://i.imgur.com/PdNHEEr.png)
+
+
+
+下面是我的答案:
+
+	i=1;
+	sum=0;
+	while i<=m,
+		sum = sum + ((X(i,:)*theta)-y(i))^2;
+		i=i+1;
+	end;
+
+	J=sum/(2*m);
+
+当然,还有更简单的办法(而且支持多变量的情况哦),那个公式在作业的部分文件中有,算了,我把那个公式也弄上来吧..(想写的自己写成编程语言形式,我懒)
+
+![](https://i.imgur.com/vpJsubF.png)
+
+
+## Gradient descent for one variable ##
+
+这个步骤需要补充完成函数文件gradientDescent.m
+
+这个部分我们需要完成补充梯度下降法的具体实现,具体来说就是,根据输入的起始theta值,X,y,learning rate和迭代次数,求出最终的theta值,即全局最小值对应的theta值.
+
+这步骤怎么做来着,想想,话说这几天我看的有点快,很多东西都忘了,不过其实学过微积分你就知道这部对应的公式应该是什么样的..你可以现场推出theta0,theta1对应的代价函数的偏导数,然后照着计算就行了..
+
+![](https://i.imgur.com/IeLxULd.png)
+
+我想这个公式写的很清楚了
+
+下面是我的答案
+
+	for iter = 1:num_iters
+	
+		temptheta=theta;
+	
+	  	%======================theta(1)======================
+		sum=0;
+		i=1;
+		while i<=m,
+			sum=sum+(X(i,:)*theta-y(i))*X(i,1);
+			i=i+1;
+		end;
+		
+		temptheta(1)=theta(1)-alpha*(sum)/m;
+	
+	
+		%======================theta(1)======================
+		
+	
+	
+		%======================theta(2)======================
+		
+		sum=0;
+		i=1;
+		while i<=m,
+			sum=sum+(X(i,:)*theta-y(i))*X(i,2);
+			i=i+1;
+		end;
+		
+		temptheta(2)=theta(2)-alpha*(sum)/m;
+	
+		%======================theta(2)======================
+		
+		theta=temptheta;
+	
+	    % ============================================================
+	
+	    % Save the cost J in every iteration    
+	    J_history(iter) = computeCost(X, y, theta);
+	
+	end
+
+
+比较傻逼的写法,因为如果像我这样写死1,2参数的话,这个写法到了多变量的时候就行不通了..无所谓啦,后面我写了多变量的版本
+
+**PS:这里有个要注意的地方,视频中教授已经提醒我们了,必须要同时更新所有的theta,所以这里我用了一个temptheta保存我们计算出来新的theta值,然后统一赋值给theta,这样我们就实现了同步更新**
+
+
+## Linear regression基础部分完成 ##
+
+完成了前面部分,那么单变量的线性回归问题的所有步骤你就掌握的差不多了,大致上应该也对线性回归模型有了较为完善的了解,我相信从线性回归模型出发,能让我们更好更快的去了解其他的机器学习的算法.
+
+当然,视频中提到的其他一些步骤我们还不知道具体怎么做,什么时候做,比如:
+
+1. 归一化
+2. 变量缩放
+3. 正规方程的使用
+4. learning rate的选择
+
+这些在后面的选作部分都会涉及到
+
+
+## 多变量部分 ##
+
+>下面的部分都是多变量的线性回归所需要做的步骤,如果你使用了正规方程,那么并不需要归一化
+
+## Feature normalization ##
+
+这个步骤我们需要补充完成函数文件featureNormalize.m.
+
+关于归一化,这里做个小小总结.
+
+首先归一化有两种,视频中也有提到
+
+1. min-max标准化
+2. Z-score标准化方法
+
+### min-max标准化 ###
+
+这个归一化的结果是：把原始数据映射到**[0,1]**之间
+
+公式:
+
+![](https://i.imgur.com/xA0oPtJ.png)
+
+其中
+
+1. X*表示归一化后的X值
+2. min表示X的最小值
+3. max表示x的最大值
+
+
+### Z-score标准化方法 ###
+
+这个归一化的结果是:把原始数据映射到**[-1,1]**之间,并且平均值为0(经过处理的数据符合标准正态分布，即均值为0，标准差为1)
+
+公式:
+
+![](https://i.imgur.com/PmwKBAC.png)
+
+其中
+
+1. x*表示归一化后x的值
+2. μ表示x样本数据的均值
+3. σ表示x样本数据的标准差
+
+#### 均值 ####
+
+就是平均值啦
+
+#### 标准差  ####
+
+标准差不懂?均方差懂不?不懂,给你公式好了
+
+![](https://i.imgur.com/pkcKo17.png)
+
+### 继续 ###
+
+说了那么多,有两种归一化的方法,那作业要求我们用哪种呢,用的**第二种**.
+
+下面是我的答案.
+
+	for i=1:m,
+		mmean=mean(X_norm(:,i));  %平均值
+		X_norm(:,i)=X_norm(:,i)-mmean;  %减去平均值,这样就归一化了
+		mu(1,i)=mmean;
+		s=std(X_norm(:,i));
+		X_norm(:,i)=X_norm(:,i)/s;
+		sigma(1,i)=s;
+	end;
+
+
+## Compute cost for multiple variables ##
+
+这步骤我们需要补充完成函数文件computeCostMulti.m
+
+这步骤和前面单个变量的时候是差不多的,我之前写的那个就可以直接拿过来用,但我们还有更简洁的写法,公式前面已经给出了,
+
+这里是答案:
+
+	J=(X*theta-y)'*(X*theta-y)/(2*m);
+
+## Gradient descent for multiple variables ##
+
+这步骤我们需要补充完成函数文件gradientDescentMulti.m
+
+这里是我的答案,修改了之前傻逼的写死的方法:
+
+	for iter = 1:num_iters
+	
+		temptheta=theta;  %缓存下当前探测点 ,因为要求同步更新,所以先保存一份之前的
+	
+		mm=size(X,2);   %特征数目,3,包括了X0=1对应的o0
+		
+		for j=1:mm,
+			%%正在计算某个特征j
+			
+			sum=0;
+			for ii=1:m,
+				sum=sum+(X(ii,:)*theta-y(ii))*X(ii,j);
+			end;
+			
+			temptheta(j)=theta(j)-(alpha*sum)/m;
+			
+	
+		end;
+			
+		theta=temptheta;
+	    % ============================================================
+	
+	    % Save the cost J in every iteration    
+	    J_history(iter) = computeCostMulti(X, y, theta);
+		
+		save histort.txt J_history;
+	
+	end
+
+## Normal Equations ##
+
+正规方程,没啥好说的,公式如下:
+
+![](https://i.imgur.com/9ttQuBC.png)
+
+答案:
+
+	theta=pinv(X'*X)*X'*y;
+
