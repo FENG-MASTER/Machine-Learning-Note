@@ -73,3 +73,6 @@ coursera第一周上半部分
 随便找个博客,开始入手了解下推荐系统(我也不知道这个毕业设计本质上是不是推荐系统,个人觉得挺像)
 
 [基于内容的推荐（Content-based Recommendations）](https://www.cnblogs.com/breezedeus/archive/2012/04/10/2440488.html)
+
+
+[协同过滤算法](http://blog.csdn.net/acdreamers/article/details/44672305) 
