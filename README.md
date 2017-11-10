@@ -79,3 +79,8 @@ coursera第一周上半部分
 
 
 [协同过滤算法](http://blog.csdn.net/acdreamers/article/details/44672305) 
+
+
+### 11.9 ###
+
+学习了coursera的过拟合部分
