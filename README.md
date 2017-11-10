@@ -11,6 +11,9 @@
 
 https://www.coursera.org/learn/machine-learning
 
+(好吧,翻墙实在是慢,最近由于我们的XXX,搞的梯子都不好用了,推荐下[b站的搬运视频](https://www.bilibili.com/video/av9912938/)[而且翻译比coursera全面])
+
+
 但我看了下coursera上的课程安排,一共11周,时间太长了,打算尽可能快的学习完毕,具体速度看这几天的学习情况再定
 
 #### 学习内容 ####
