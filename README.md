@@ -94,4 +94,35 @@ coursera第一周上半部分
 
 最近感觉状态不好,调整学习状态,在看一些入门科普性质的博文
 
-[阿里云的深度学习入门文章](https://yq.aliyun.com/topic/111)
+
+[一入侯门“深”似海，深度学习深几许（深度学习入门系列之一）](https://yq.aliyun.com/articles/86580?spm=5176.100239.blogcont159710.14.CEFeKZ)
+
+[人工“碳”索意犹尽，智能“硅”来未可知（深度学习入门系列之二）](https://yq.aliyun.com/articles/88300?spm=5176.100239.blogcont159710.15.CEFeKZ)
+
+
+
+### 11.13 ###
+
+[神经网络不胜语，M-P模型似可寻（深度学习入门系列之三）](https://yq.aliyun.com/articles/90565?spm=5176.100239.blogcont159710.16.CEFeKZ)
+
+[“机器学习”三重门，“中庸之道”趋若人（深度学习入门系列之四）](https://yq.aliyun.com/articles/91436?spm=5176.100239.blogcont159710.17.CEFeKZ)
+
+[Hello World感知机，懂你我心才安息 (深度学习入门系列之五)](https://yq.aliyun.com/articles/93540?spm=5176.100239.blogcont159710.18.CEFeKZ)
+
+### 11.14 ###
+
+[损失函数减肥用，神经网络调权重（深度学习入门系列之六）](https://yq.aliyun.com/articles/96427?spm=5176.100239.blogcont159710.19.CEFeKZ)
+
+
+[山重水复疑无路，最快下降问梯度（深度学习入门系列之七）](https://yq.aliyun.com/articles/105339?spm=5176.100239.blogcont159710.20.CEFeKZ)
+
+
+[BP算法双向传，链式求导最缠绵（深度学习入门系列之八）](https://yq.aliyun.com/articles/110025?spm=5176.100239.blogcont159710.21.CEFeKZ)
+
+
+[全面连接困何处，卷积网络见解深（深度学习入门系列之九）](https://yq.aliyun.com/articles/152935?spm=5176.100239.blogcont159710.22.CEFeKZ)
+
+
+[卷地风来忽吹散，积得飘零美如画（深度学习入门系列之十）](https://yq.aliyun.com/articles/156269?spm=5176.100239.blogcont159710.23.CEFeKZ)
+
+[局部连接来减参，权值共享肩并肩（深度学习入门系列之十一） ](https://yq.aliyun.com/articles/159710?spm=5176.100239.blogcont156269.36.gi4U7M)
