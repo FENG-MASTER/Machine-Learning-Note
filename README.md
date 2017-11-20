@@ -126,3 +126,18 @@ coursera第一周上半部分
 [卷地风来忽吹散，积得飘零美如画（深度学习入门系列之十）](https://yq.aliyun.com/articles/156269?spm=5176.100239.blogcont159710.23.CEFeKZ)
 
 [局部连接来减参，权值共享肩并肩（深度学习入门系列之十一） ](https://yq.aliyun.com/articles/159710?spm=5176.100239.blogcont156269.36.gi4U7M)
+
+
+### 11.15 ###
+
+[激活引入非线性，池化预防过拟合（深度学习入门系列之十二） ](https://yq.aliyun.com/articles/167391?spm=5176.100239.blogcont159710.38.tOyt1T)
+
+[循环递归RNN，序列建模套路深（深度学习入门系列之十三） ](https://yq.aliyun.com/articles/169880?spm=5176.100239.blogcont167391.45.HProlG)
+
+[LSTM长短记，长序依赖可追忆（深度学习入门系列之十四） ](https://yq.aliyun.com/articles/174256?spm=5176.100239.blogcont169880.49.zcgJVE)
+
+
+### 11.16-11.19 ###
+
+休息
+
