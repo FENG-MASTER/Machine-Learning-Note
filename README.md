@@ -174,6 +174,8 @@ https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c
 
 爬虫好像能正常工作了,就是慢了点,优化的事情之后再说,现在起码有部分数据了,剩下的工作是开始了解具体需要做的步骤
 
+爬虫github传送门: https://github.com/FENG-MASTER/ZhihuSpider
+
 ### 12.1 ###
 
 1. 初步了解中文分词
