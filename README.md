@@ -183,3 +183,15 @@ https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c
 3. 初步了解机器学习在搜索引擎中的运用,了解到了LTR,打算采用Listwise的训练方法,正在学习ListNet具体实现
 
 http://blog.csdn.net/eastmount/article/details/43341907
+
+### 12.29 ###
+
+之前休息外加考试复习和考试去了
+
+### 12.30 ###
+
+先看了下LTR的一个简单的PRank算法
+
+http://blog.csdn.net/eastmount/article/details/43080791
+
+准备再了解下LTR的其他算法
