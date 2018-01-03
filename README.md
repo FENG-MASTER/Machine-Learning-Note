@@ -195,3 +195,7 @@ http://blog.csdn.net/eastmount/article/details/43341907
 http://blog.csdn.net/eastmount/article/details/43080791
 
 准备再了解下LTR的其他算法
+
+### 1.3 ###
+撰写开题报告
+准备其他一些开题材料等
