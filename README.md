@@ -214,3 +214,9 @@ http://blog.csdn.net/eastmount/article/details/43080791
 
 1. 增加了文本长度的特征值提取
 2. 试图优化逆向索引的生成速度,失败告终,打算直接跑.
+
+###1.16-1.17###
+
+写listnet算法,进度相关可以看我的库
+
+传送门:[https://github.com/FENG-MASTER/QA_Matching_Learning](https://github.com/FENG-MASTER/QA_Matching_Learning "QA_Matching_Learning")
