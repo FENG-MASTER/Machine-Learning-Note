@@ -220,3 +220,15 @@ http://blog.csdn.net/eastmount/article/details/43080791
 写listnet算法,进度相关可以看我的库
 
 传送门:[https://github.com/FENG-MASTER/QA_Matching_Learning](https://github.com/FENG-MASTER/QA_Matching_Learning "QA_Matching_Learning")
+
+
+###1.18###
+
+好吧,前面算法不对,我还是先尝试找个库看看效果
+
+###1.19###
+
+补一下决策树的基础概念:
+
+[https://www.jianshu.com/p/6eecdeee5012](https://www.jianshu.com/p/6eecdeee5012)
+
